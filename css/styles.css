@@ -13,7 +13,12 @@
 body {
   background-image: url(../img/bodybg.png);
   background-position: center center;
-  font-family: "Hiragino Kaku Gothic Pro", Osaka, Meiryo, "MS PGothic", arial, helvetica, clean, sans-serif;
+  font-family: "Hiragino Kaku Gothic Pro";
+}
+
+pre 
+{
+    font-family: Hiragino Kaku Gothic Pro;
 }
 input[type=range] {
   height: 13px;
@@ -470,7 +475,8 @@ input[type=range]:focus::-ms-fill-upper {
   text-align: center;
   color: #111;
   z-index: 20;
-  font-size: 10px;
+  font-size: 8.7px;
+  left: 1pt;
 }
 .fixedlinks li a:after {
   content: ' ';
@@ -677,6 +683,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: rgba(193, 187, 170, 0.5);
   position: relative;
 }
+
 .window__header:before {
   content: ' ';
   position: absolute;
@@ -686,6 +693,7 @@ input[type=range]:focus::-ms-fill-upper {
   top: 0px;
   box-shadow: inset 0px 0px 2px #000000;
 }
+
 .window__content {
   box-shadow: 2px 2px 2px 1px #9b9182;
   border: 3px solid #c1bbaa;

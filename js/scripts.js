@@ -206,10 +206,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-	document.addEventListener('click',function(e) {
+	document.addEventListener('contextmenu',function(e) {
 		document.querySelectorAll('.js-contex_content').forEach(function(item) {
+			e.preventDefault();
 			item.classList.remove('active');
 		});
+		item.classList.add('active');
 	});
 
 
@@ -508,13 +510,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	document.querySelectorAll('.js-contexmenu_open').forEach(function(item) {
-		item.addEventListener('contextmenu', function(ev) {
+		item.addEventListener('click', function(ev) {
 			ev.preventDefault();
 			document.querySelectorAll('.js-contex_content').forEach(function(item) {
 				item.classList.remove('active');
 			});
 			this.parentElement.querySelector('.js-contex_content').classList.add('active');
-		}, false);
+		}, true);
+
 	})
 
 
@@ -535,7 +538,7 @@ document.addEventListener('DOMContentLoaded', function() {
 					item.querySelector("[data-command='"+run_command+"']").classList.remove('hidden');
 				}
 				if(run_command === 'help') {
-					alert('available commands: about, files, projects, updates');
+					alert('available: about, files, projects, updates');
 				}
 
 

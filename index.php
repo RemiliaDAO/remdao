@@ -49,7 +49,7 @@
                             <a href="#" class="disabled"><strike>Remilia Collective Manifesto</strike></a>
                             <a href="#" class="disabled"><strike>RemiliaDAO Investment Thesis</strike></a>
                             <a href="#" class="disabled"><strike>Milady World Minecraft Whitepaper</strike></a>
-                            <a href="#" class="disabled">About the Remilia Family</a>
+                            <a href="#" class="js-command_project" data-project="d">About the Remilia Family</a>
                         </li>
                     </ul>
                 </li>
@@ -233,15 +233,15 @@
             <div class="dhide">
                 <ul class="fixedlinks_dt">
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://miladymaker.net" target="_blank">
                             <span>Governance</span>
                         </a>
                     </li><li>
-                        <a href="#" target="_blank">
+                        <a href="https://discord.com/invite/milady" target="_blank">
                             <span>Chat Now!</span>
                         </a>
                     </li><li>
-                        <a href="#" target="_blank">
+                        <a href="https://blog.remilia.org" target="_blank">
                             <span>Knowledge Base</span>
                         </a>
                     </li>
@@ -391,7 +391,7 @@
 
 
 
-        <div class="window window_news js-window" data-command='news' style="top: 100px; z-index: 1; left: 20px;">
+        <div class="window window_news js-window" data-command='news' style="top: 50px; z-index: 1; left: 20px;">
 <!--            <div class="window__resize window__resize_br js-window_resizer"></div>-->
 <!--            <div class="window__resize window__resize_bl js-window_resizer"></div>-->
 <!--            <div class="window__resize window__resize_tr js-window_resizer"></div>-->
@@ -421,7 +421,7 @@ document.write(utc);
 ------------
  ~ Milady Party planned 11/5/21
  ~ Rave and party, Open entrance. Bring your friends and enjoy.
- ~ Address to be updated.
+ ~ 267 Kent Ave. Brooklyn, New York.
 
                 </pre>
             </div>
@@ -491,14 +491,11 @@ document.write(utc);
                 <img src="img/scheme.png">
             </div>
         </div>
-
-
-
-        <div class="window js-window" data-command='terminal' style="top:calc(100% - 670px); z-index: 4; left:600px;">
-<!--            <div class="window__resize window__resize_br js-window_resizer"></div>-->
-<!--            <div class="window__resize window__resize_bl js-window_resizer"></div>-->
-<!--            <div class="window__resize window__resize_tr js-window_resizer"></div>-->
-            <div class="window__mintext js-window_mintext">Project 3</div>
+        <div class="window js-window hidden" data-command='project_d' style="top: 50px; z-index: 3; left: calc(100% - 380px);">
+            <div class="window__resize window__resize_br js-window_resizer"></div>
+            <div class="window__resize window__resize_bl js-window_resizer"></div>
+            <div class="window__resize window__resize_tr js-window_resizer"></div>
+            <div class="window__mintext js-window_mintext">About the Remilia Family.</div>
             <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
             <div class="window__header js-window_header">
                 <div class="window__close js-window_minimise">
@@ -512,7 +509,60 @@ document.write(utc);
                 </div>
             </div>
             <div class="window__content">
-                <iframe src="./milady.html" width="400" height="500" title="Milady"></iframe>
+                Remilia Corporation<BR> 
+                Est. 2021. 
+            </div>
+        </div>
+
+
+
+        <div class="window js-window" data-command='terminal' style="top:calc(100% - 690px); z-index: 4; left:100px;">
+<!--            <div class="window__resize window__resize_br js-window_resizer"></div>-->
+<!--            <div class="window__resize window__resize_bl js-window_resizer"></div>-->
+<!--            <div class="window__resize window__resize_tr js-window_resizer"></div>-->
+            <div class="window__mintext js-window_mintext">Milady Maker</div>
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div class="window__header js-window_header">
+                <div style="position: absolute;top:10%;margin-left: 22px; font-size: 13px;  font-family: arial;">Milady Maker</div>
+                <div class="window__close js-window_minimise">
+                    <i></i>
+                </div>
+                <div class="window__fullscreen js-window_close">
+                    <i></i>
+                </div>
+                <div class="window__dot">
+                    <i></i>
+                </div>
+            </div>
+            <div class="window__content">
+                <div align="center"><iframe src="./milady.html" width="429" height="500" title="Milady"></iframe></div>
+                <div align="center"><pre><a href="https://miladymaker.net" target="_blank">Mint your Milady!</a></pre></div>
+            </div>
+        </div>
+
+
+
+        <div class="window js-window" data-command='terminal' style="top:calc(100% - 950px); z-index: 4; left:650px;">
+<!--            <div class="window__resize window__resize_br js-window_resizer"></div>-->
+<!--            <div class="window__resize window__resize_bl js-window_resizer"></div>-->
+<!--            <div class="window__resize window__resize_tr js-window_resizer"></div>-->
+            <div class="window__mintext js-window_mintext">Bonklers</div>
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div class="window__header js-window_header">
+                <div style="position: absolute;top:10%;margin-left: 22px; font-size: 13px;  font-family: arial;">Bonklers</div>
+                <div class="window__close js-window_minimise">
+                    <i></i>
+                </div>
+                <div class="window__fullscreen js-window_close">
+                    <i></i>
+                </div>
+                <div class="window__dot">
+                    <i></i>
+                </div>
+            </div>
+            <div class="window__content">
+               <img src="./img/bonkle812841.png"/>
+               <div align="center"><pre> Details coming soon....</pre></div>
             </div>
         </div>
 
@@ -541,7 +591,7 @@ document.write(utc);
                 </div>
             </div>
             <div class="window__content">
-                about command content
+                <div>Remilia Corporation<br> Part of a Jilted Generation.<br>Copyright 2021. All Rights Reserved.</div>
             </div>
         </div>
 
@@ -620,16 +670,16 @@ document.write(utc);
 
         <ul class="fixedlinks">
             <li>
-                <a href="https://3dtestosterone.net" target="_blank">
+                <a href="https://miladymaker.net" target="_blank">
                     <span>Governance</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
+                <a href="https://discord.com/invite/milady" target="_blank">
                     <span>Chat Now!</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
-                    <span>KnowledgeBase</span>
+                <a href="https://blog.remilia.org" target="_blank">
+                    <span>Knowledge Base</span>
                 </a>
             </li>
         </ul>
@@ -711,6 +761,29 @@ document.write(utc);
             </div>
             <div class="window__content">
                 <img src="img/scheme.png">
+            </div>
+        </div>
+
+        <div class="window js-window hidden" data-command='project_d' style="top: 50px; z-index: 3; left: calc(100% - 380px);">
+            <div class="window__resize window__resize_br js-window_resizer"></div>
+            <div class="window__resize window__resize_bl js-window_resizer"></div>
+            <div class="window__resize window__resize_tr js-window_resizer"></div>
+            <div class="window__mintext js-window_mintext">About the Remilia Family.</div>
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div class="window__header js-window_header">
+                <div class="window__close js-window_minimise">
+                    <i></i>
+                </div>
+                <div class="window__fullscreen js-window_close">
+                    <i></i>
+                </div>
+                <div class="window__dot">
+                    <i></i>
+                </div>
+            </div>
+            <div class="window__content">
+                Remilia Corporation<BR> 
+                Est. 2021. 
             </div>
         </div>
 
@@ -813,15 +886,15 @@ document.write(utc);
 
         <ul class="fixedlinks">
             <li>
-                <a href="https://3dtestosterone.net" target="_blank">
+                <a href="https://miladymaker.net" target="_blank">
                     <span>Governance</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
+                <a href="https://discord.com/invite/milady" target="_blank">
                     <span>Chat Now!</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
+                <a href="https://blog.remilia.org" target="_blank">
                     <span>Knowledge Base</span>
                 </a>
             </li>
@@ -909,6 +982,28 @@ document.write(utc);
                 <img src="img/scheme.png">
             </div>
         </div>
+        <div class="window js-window hidden" data-command='project_d' style="top: 50px; z-index: 3; left: calc(100% - 380px);">
+            <div class="window__resize window__resize_br js-window_resizer"></div>
+            <div class="window__resize window__resize_bl js-window_resizer"></div>
+            <div class="window__resize window__resize_tr js-window_resizer"></div>
+            <div class="window__mintext js-window_mintext">About the Remilia Family.</div>
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div class="window__header js-window_header">
+                <div class="window__close js-window_minimise">
+                    <i></i>
+                </div>
+                <div class="window__fullscreen js-window_close">
+                    <i></i>
+                </div>
+                <div class="window__dot">
+                    <i></i>
+                </div>
+            </div>
+            <div class="window__content">
+               Remilia Corporation<BR> 
+                Est. 2021. 
+            </div>
+        </div>
 
 
 
@@ -1009,16 +1104,16 @@ document.write(utc);
 
         <ul class="fixedlinks">
             <li>
-                <a href="https://3dtestosterone.net" target="_blank">
-                    <span>link1</span>
+                <a href="https://miladymaker.net" target="_blank">
+                    <span>Governance</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
-                    <span>link2</span>
+                <a href="https://discord.com/invite/milady" target="_blank">
+                    <span>Chat Now!</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
-                    <span>link2</span>
+                <a href="https://blog.remilia.org" target="_blank">
+                    <span>Knowledge Base</span>
                 </a>
             </li>
         </ul>
@@ -1102,6 +1197,40 @@ document.write(utc);
         </div>
 
 
+
+
+
+
+
+
+
+
+        <div class="window js-window hidden" data-command='project_d' style="top: 50px; z-index: 3; left: calc(100% - 380px);">
+            <div class="window__resize window__resize_br js-window_resizer"></div>
+            <div class="window__resize window__resize_bl js-window_resizer"></div>
+            <div class="window__resize window__resize_tr js-window_resizer"></div>
+            <div class="window__mintext js-window_mintext">About the Remilia Family.</div>
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div class="window__header js-window_header">
+                <div class="window__close js-window_minimise">
+                    <i></i>
+                </div>
+                <div class="window__fullscreen js-window_close">
+                    <i></i>
+                </div>
+                <div class="window__dot">
+                    <i></i>
+                </div>
+            </div>
+            <div class="window__content">
+                Remilia Corporation<BR> 
+                Est. 2021. 
+            </div>
+        </div>
+
+
+
+
         <div class="window js-window hidden" data-command='about'>
             <div class="window__resize window__resize_br js-window_resizer"></div>
             <div class="window__resize window__resize_bl js-window_resizer"></div>
@@ -1199,16 +1328,16 @@ document.write(utc);
 
         <ul class="fixedlinks">
             <li>
-                <a href="https://3dtestosterone.net" target="_blank">
-                    <span>link1</span>
+                <a href="https://miladymaker.net" target="_blank">
+                    <span>Governance</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
-                    <span>link2</span>
+                <a href="https://discord.com/invite/milady" target="_blank">
+                    <span>Chat Now!</span>
                 </a>
             </li><li>
-                <a href="https://3dtestosterone.net" target="_blank">
-                    <span>link2</span>
+                <a href="https://blog.remilia.org" target="_blank">
+                    <span>Knowledge Base</span>
                 </a>
             </li>
         </ul>
