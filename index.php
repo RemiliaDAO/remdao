@@ -33,9 +33,9 @@
                     </a>
                     <ul class="suboptions js-contex_content">
                         <li>
-                            <a href="#" class="js-command_project" data-project="a">Milady Maker</a>
-                            <a href="#" class="js-command_project" data-project="b">Kagami</a>
-                            <a href="#" class="js-command_project" data-project="c">Patchouli</a>
+                            <a href="https://miladymaker.net">Milady Maker</a>
+                            <a href="#" class="disabled"><strike>Kagami</strike></a>
+                            <a href="#" class="disabled"><strike>Patchouli</strike></a>
                         </li>
                     </ul>
                 </li>
