@@ -521,7 +521,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	 	var min=35.213; //Change this value
+	    var max=100; //Change this value
+	    min = Math.ceil(min);
+	    max = Math.floor(max);
+	      
+	    var my_num=Math.floor(Math.random() * (max - min + 1)) + min;
+	    document.getElementById("percent").innerHTML=my_num;
 
+	
 
 	document.querySelectorAll('.js-command_project').forEach(function(item) {
 		item.addEventListener('click',function(e) {
