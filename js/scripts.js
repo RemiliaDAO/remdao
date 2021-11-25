@@ -525,9 +525,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	    var max=100; //Change this value
 	    min = Math.ceil(min);
 	    max = Math.floor(max);
+	    var min2=35.213; //Change this value
+	    var max2=100; //Change this value
+	    min2 = Math.ceil(min2);
+	    max2 = Math.floor(max2);
 	      
 	    var my_num=Math.floor(Math.random() * (max - min + 1)) + min;
-	    var my_back=Math.floor(Math.random() * (max - min + 1)) + min;
+	    var my_back=Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
 	    document.getElementById("percent").innerHTML=my_num;
 	    document.getElementById("js-backlight").innerHTML=my_back;
 
