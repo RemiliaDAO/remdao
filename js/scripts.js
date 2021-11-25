@@ -34,11 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		//console.log(this);
 		e.preventDefault();
 
-		document.querySelectorAll('.js-windows_container')
-		document.querySelector('.js-command_run').addEventListener('click', function(e) {
-		e.preventDefault();
-
-		var run_command = prompt('What command do you want to run?', 'about').forEach(function(parentwindow) {
+		document.querySelectorAll('.js-windows_container').forEach(function(parentwindow) {
 			if(parentwindow.classList.contains('active')) {
 				draggable_container = parentwindow;
 			}
@@ -95,10 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 		if(new_pos_y > 0 && new_pos_y < (draggable_container.offsetHeight - draggable_window.offsetHeight)) {
-			draggable_window.style.top = new_pos_y + document.querySelector('.js-command_run').addEventListener('click', function(e) {
-		e.preventDefault();
-
-		var run_command = prompt('What command do you want to run?', 'about')"px";
+			draggable_window.style.top = new_pos_y + "px";
 		}
 
 
