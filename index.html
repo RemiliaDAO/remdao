@@ -315,7 +315,7 @@
                             </g>
                         </svg>
 
-                        Battery <script>Math.floor(Math.random() * 101);</script>
+                        Battery <div id=percent></div>
                     </a>
                 </li>
                 <li>
@@ -361,7 +361,7 @@
                             </g>
                         </svg>
 
-                        Backlight <script>Math.floor(Math.random() * 101);</script>
+                        Backlight <div id=percent_1></div>
                     </a>
                 </li>
                 <li>
@@ -1486,5 +1486,12 @@ document.write(utc);
 </div>
 
 <script src="./js/scripts.js"></script>
+
+<script>function generate_number(){
+var my_num=Math.random() *(100-1+1) + 1;
+document.getElementById("percent").innerHTML=my_num;
+document.getElementById("percent_1").innerHTML=Math.floor(my_num);
+}
+</script>
 </body>
 </html>
