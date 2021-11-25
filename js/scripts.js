@@ -521,33 +521,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
-	document.querySelector('.js-command_run').addEventListener('click', function(e) {
-		e.preventDefault();
-
-		var run_command = prompt('What command do you want to run?', 'about');
-
-
-		var win_id = 1;
-		document.querySelectorAll('.js-windows_container').forEach(function(item) {
-			if(item.classList.contains('active')) {
-
-
-				if(run_command !== 'about' && run_command !== 'files' && run_command !==  'projects' && run_command !==  'updates') {
-					alert('command does not exist');
-				} else {
-					item.querySelector("[data-command='"+run_command+"']").classList.remove('hidden');
-				}
-				if(run_command === 'help') {
-					alert('available: about, files, projects, updates');
-				}
-
-
-			}
-		});
-
-
-		console.log(run_command);
-	});
 
 
 	document.querySelectorAll('.js-command_project').forEach(function(item) {
