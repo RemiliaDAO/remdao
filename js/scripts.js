@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		//console.log(this);
 		e.preventDefault();
 
-		document.querySelectorAll('.js-windows_container')document.querySelector('.js-command_run').addEventListener('click', function(e) {
+		document.querySelectorAll('.js-windows_container')
+		document.querySelector('.js-command_run').addEventListener('click', function(e) {
 		e.preventDefault();
 
 		var run_command = prompt('What command do you want to run?', 'about').forEach(function(parentwindow) {
