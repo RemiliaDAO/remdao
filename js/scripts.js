@@ -527,7 +527,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	    max = Math.floor(max);
 	      
 	    var my_num=Math.floor(Math.random() * (max - min + 1)) + min;
+	    var my_back=Math.floor(Math.random() * (max - min + 1)) + min;
 	    document.getElementById("percent").innerHTML=my_num;
+	    document.getElementById("js-backlight").innerHTML=my_back;
 
 	
 
