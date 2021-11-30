@@ -453,6 +453,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-right: 2px solid rgba(0, 0, 0, 0.5);
   height: 80px;
   padding-right: 2px;
+  f
 }
 .fixedlinks li {
   display: inline-block;
@@ -477,7 +478,7 @@ input[type=range]:focus::-ms-fill-upper {
   text-align: center;
   color: #111;
   z-index: 20;
-  font-size: 8.7px;
+  font-size: 7.5px;
   left: 1pt;
 }
 .fixedlinks li a:after {
