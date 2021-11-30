@@ -493,6 +493,7 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 10;
   pointer-events: none;
   background-image: url(../img/bbounce.gif);
+  background-blend-mode: overlay;
   background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -545,6 +546,7 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 10;
   pointer-events: none;
   background-image: url(../img/bbounce.gif);
+  background-blend-mode: overlay;
   background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -624,6 +626,7 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 10;
   pointer-events: none;
   background-image: url(../img/min.png);
+
   background-size: cover;
 }
 .window.minimized .window__header {
