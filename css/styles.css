@@ -498,7 +498,7 @@ input[type=range]:focus::-ms-fill-upper {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.fixedlinks li a#kb:after 
+.fixedlinks a#kb:after 
 { 
   background-image: url(../img/bbounce.gif) !important; 
 }
