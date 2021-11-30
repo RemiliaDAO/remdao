@@ -547,10 +547,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.fixedlinks_dt li a:after #kb 
-{
-  background-image: url(../img/bbounce.gif);
-}
+
 .suboptions {
   position: absolute;
   width: 200px;
