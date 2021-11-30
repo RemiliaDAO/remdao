@@ -510,7 +510,7 @@ input[type=range]:focus::-ms-fill-upper {
   top: 0px;
   z-index: 10;
   pointer-events: none;
-   background-image: url(../img/bbounce.gif) !important; 
+  background-image: url(../img/bbounce.gif) !important; 
   background-blend-mode: overlay;
   background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.5);
