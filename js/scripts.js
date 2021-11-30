@@ -341,6 +341,32 @@ document.addEventListener('DOMContentLoaded', function() {
 		playsong();
 	});
 
+
+	document.querySelector('.js-play').addEventListener('click', function(e) {
+		e.preventDefault();
+		document.querySelector('.js-play').classList.add('active');
+		document.querySelector('.js-pause').classList.remove('active');
+		playsong();
+	});
+
+
+	song.addEventListener('ended', function(e){
+		if(currently_playing == total_songs) {
+			currently_playing = 1;
+		} else {
+			currently_playing++;
+		}
+
+
+
+		console.log(currently_playing);
+		resetmusic();
+		var songlink = document.querySelector("[data-song='"+currently_playing+"']");
+		songlink.classList.add('active');
+		var mp3 = songlink.href;
+		playme(mp3);
+	});
+
 	document.querySelector('.js-player_volume').addEventListener('input', function(e) {
 		e.preventDefault();
 		document.querySelector('.js-player_volume_value').innerHTML = this.value;
@@ -527,7 +553,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	    max = Math.floor(max);
 	    
 	    var my_num=Math.floor(Math.random() * (max - min + 1)) + min;
-	    document.getElementById("percent").innerHTML=my_num;
+		if(document.getElementById("percent")) {
+			document.getElementById("percent").innerHTML=my_num;
+		}
+
 	   
 
 	
@@ -550,4 +579,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		});
 	});
+
+
+	document.querySelectorAll('.js-windows_container').forEach(function(item) {
+		item.addEventListener('click',function(e) {
+			document.querySelectorAll('.js-contex_content').forEach(function(item) {
+				e.preventDefault();
+				item.classList.remove('active');
+			});
+		});
+	});
+
+
 });
