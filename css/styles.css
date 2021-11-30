@@ -507,7 +507,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: rgba(193, 187, 170, 0.5);
   position: absolute;
   background-image: url(../img/bbounce.gif) !important; 
-  background-blend-mode: overlay;
+  background-blend-mode: darken;
   background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.5);
 
