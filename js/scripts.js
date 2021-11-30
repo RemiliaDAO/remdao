@@ -584,7 +584,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.querySelectorAll('.js-windows_container').forEach(function(item) {
 		item.addEventListener('click',function(e) {
 			document.querySelectorAll('.js-contex_content').forEach(function(item) {
-				e.preventDefault();
+				//e.preventDefault();
 				item.classList.remove('active');
 			});
 		});
