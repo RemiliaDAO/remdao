@@ -497,23 +497,12 @@ input[type=range]:focus::-ms-fill-upper {
   background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.fixedlinks a#kb:after /* really strange css selector lol */
-{
-  content: ' ';
-  display: block;
-  width: 80px;
-  height: 80px;
-  background-color: rgba(193, 187, 170, 0.5);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 10;
-  pointer-events: none;
-  background-image: url(../img/bbounce.gif);
-  background-blend-mode: overlay;
-  background-size: cover;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+
+.fixedlinks li a#kb:after 
+{ 
+  background-image: url(../img/bbounce.gif) !important; 
 }
+
 
 .fixedlinks_dt {
   position: relative;
