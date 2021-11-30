@@ -498,7 +498,7 @@ input[type=range]:focus::-ms-fill-upper {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.fixedlinks a#thirdlink:after 
+.fixedlinks a#kb:after 
 { 
   content: ' ';
   display: block;
