@@ -176,7 +176,7 @@ input[type=range]:focus::-ms-fill-upper {
   &__music {
     overflow-y: auto;
     overflow-x: hidden;
-    max-height: 100px;
+    max-height: 80px;
     ul {
       list-style: none;
       margin-top: 5px;
@@ -396,6 +396,225 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
+
+
+.js-mobileticker {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .js-mobileticker {
+    width: calc(~"100% - 10px");
+    margin-left: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+  }
+  .js-mobileticker p {
+    -moz-animation: marquee 10s linear infinite;
+    -webkit-animation: marquee 10s linear infinite;
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+  }
+  @-moz-keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  @-webkit-keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  @keyframes marquee {
+    0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%) }
+    100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%); }
+  }
+
+
+
+  .buttonsmenu {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    > li {
+      display: inline-block;
+      position: relative;
+      width: calc(~"33% - 0px");
+      float: left;
+      > a {
+        line-height: 60px;
+        display: inline-block;
+        width: calc(~"100% + 3px");
+        color: #111;
+        text-decoration: none;
+        margin-top: 4px;
+        box-shadow: 2px 2px 2px 1px rgba(115, 105, 90, 1);
+        border: 3px solid #c1bbaa;
+        border-radius: 1px;
+        background-color: rgba(193, 187, 170, 0.5);
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        transition: all 300ms;
+        svg {
+          fill: #165652;
+          display: inline-block;
+          float: left;
+          width: 18px;
+          margin-left:5px;
+          margin-top: 6px;
+        }
+        &:before {
+          content: ' ';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 1);
+          pointer-events: none;
+        }
+        &:hover {
+          svg {
+            fill: #469662;
+            transition: all 300ms;
+          }
+        }
+      }
+      > div {
+        line-height: 30px;
+        display: inline-block;
+        width: calc(~"100% + 3px");
+        color: #111;
+        text-decoration: none;
+        margin-top: 4px;
+        box-shadow: 2px 2px 2px 1px rgba(115, 105, 90, 1);
+        border: 3px solid #c1bbaa;
+        border-radius: 1px;
+        background-color: rgba(193, 187, 170, 0.5);
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        svg {
+          fill: #165652;
+          display: inline-block;
+          float: left;
+          width: 18px;
+          margin-left:5px;
+          margin-top: 6px;
+        }
+        &:before {
+          content: ' ';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 1);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+
+
+  .buttonsmenu_sound {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    > li {
+      display: inline-block;
+      position: relative;
+      width: calc(~"50% - 2px");
+      float: left;
+      > a {
+        line-height: 30px;
+        display: inline-block;
+        width: calc(~"100% + 3px");
+        color: #111;
+        text-decoration: none;
+        margin-top: 4px;
+        box-shadow: 2px 2px 2px 1px rgba(115, 105, 90, 1);
+        border: 3px solid #c1bbaa;
+        border-radius: 1px;
+        background-color: rgba(193, 187, 170, 0.5);
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        transition: all 300ms;
+        svg {
+          fill: #165652;
+          display: inline-block;
+          float: left;
+          width: 18px;
+          margin-left:5px;
+          margin-top: 6px;
+        }
+        &:before {
+          content: ' ';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 1);
+          pointer-events: none;
+        }
+        &:hover {
+          svg {
+            fill: #469662;
+            transition: all 300ms;
+          }
+        }
+      }
+      > div {
+        line-height: 30px;
+        display: inline-block;
+        width: calc(~"100% + 3px");
+        color: #111;
+        text-decoration: none;
+        margin-top: 4px;
+        box-shadow: 2px 2px 2px 1px rgba(115, 105, 90, 1);
+        border: 3px solid #c1bbaa;
+        border-radius: 1px;
+        background-color: rgba(193, 187, 170, 0.5);
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        svg {
+          fill: #165652;
+          display: inline-block;
+          float: left;
+          width: 18px;
+          margin-left:5px;
+          margin-top: 6px;
+        }
+        &:before {
+          content: ' ';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 1);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+
+
 .maincontainer {
   display: flex;
   align-items: flex-start;
@@ -461,6 +680,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-right: 2px solid rgba(0,0,0,0.5);
   height: 80px;
   padding-right: 2px;
+  z-index: 8;
   li {
     display: inline-block;
     a {
@@ -605,7 +825,16 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 
-
+.fadeanimation {
+  position: absolute;
+  width: calc(~"100% + 12px");
+  height: calc(~"100% + 12px");
+  left: -6px;
+  top: -6px;
+  z-index: 200;
+  background-color: rgba(255,0,255,0);
+  pointer-events: none;
+}
 
 .window {
   position: absolute;
@@ -709,21 +938,25 @@ input[type=range]:focus::-ms-fill-upper {
     }
   }
   &__content {
+    max-width: 600px;
     box-shadow: 2px 2px 2px 1px rgba(155, 145, 130, 1);
     border: 3px solid #c1bbaa;
     border-radius: 2px;
     background-color: rgba(193, 187, 170, 0.5);
-    background-color: #afb2c3;
+    background-color: #bcb29e;
     text-align: left;
     font-size: 13px;
     color: #000;
     position: relative;
     padding: 6px;
+    font-family: Tahoma;
+    min-width: 220px;
     img {
       max-width: 100%;
       max-height: 100%;
       width: 100%;
       height: auto;
+      margin-bottom: 10px;
     }
     &:before {
       content: ' ';
@@ -802,14 +1035,31 @@ input[type=range]:focus::-ms-fill-upper {
 .dhide {
   display: none;
 }
+.dhd {
+  display: none;
+}
 
 @media screen and (max-width: 980px) {
 
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .suboptions {
+    margin-left: 0px;
+  }
   .mobhide {
     display: none;
   }
+  .dhd {
+    display: block;
+  }
   .dhide {
     display: block;
+    position: absolute;
+    top: calc(~"100vh + 350px");
+    left: 0px;
   }
   .fixedlinks {
     display: none;
@@ -823,8 +1073,32 @@ input[type=range]:focus::-ms-fill-upper {
     min-height: auto;
     margin-top: 3px;
     flex: 1;
+    &__mobtoggle {
+      position: absolute;
+      width: 20px;
+      left: -20px;
+      height: 100%;
+      background-color: rgba(193, 187, 170, 0.5);
+      box-sizing: border-box;
+      border: 3px solid #c1bbaa;
+      box-shadow: 2px 2px 2px 1px rgba(115, 105, 90, 1);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: #111;
+      line-height: 10px;
+      &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+      }
+    }
     &__left {
-      width: calc(~"100% - 3px");
+      transition: all 400ms;
+      width: calc(~"100% - 23px");
+      margin-left: 20px;
       box-shadow: 2px 2px 2px 1px rgba(115, 105, 90, 1);
       height: auto;
       min-height: auto;
@@ -836,6 +1110,7 @@ input[type=range]:focus::-ms-fill-upper {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      right: 0px;
       &_top {
         width: 100%;
         height: auto;
@@ -857,14 +1132,28 @@ input[type=range]:focus::-ms-fill-upper {
       }
     }
     &__right {
+      transition: all 400ms;
       width: 100%;
-      min-height: auto;
       height: auto;
       background-color: rgba(151,170,145,0.3);
       position: relative;
       display: none;
+      min-height: calc(~"100vh + 200px");
       &.active {
         display: block;
+      }
+    }
+
+    &.closed {
+      .maincontainer__left {
+        transition: all 400ms;
+        position: absolute;
+        right: calc(~"-100% + 25px");
+        z-index: 300;
+      }
+      .maincontainer__right {
+        transition: all 400ms;
+        min-height: calc(~"100vh + 430px");
       }
     }
   }
@@ -874,15 +1163,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 
   .window {
-    position: relative;
+    position: absolute;
     z-index: 9;
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
     text-align: center;
-    min-width: 200px;
-    max-width: 500px;
-    left: 0px !important;
-    top: 0px !important;
+    left: 0px;
+    top: 0px;
     &.minimized {
       transition: all 400ms !important;
       left: 3px;
@@ -921,7 +1208,7 @@ input[type=range]:focus::-ms-fill-upper {
       border: 3px solid #c1bbaa;
       border-radius: 2px;
       background-color: rgba(193, 187, 170, 0.5);
-      background-color: #afb2c3;
+      background-color: #bcb29e;
       text-align: left;
       font-size: 13px;
       color: #000;
@@ -943,7 +1230,9 @@ input[type=range]:focus::-ms-fill-upper {
       height: 20px;
       display: inline-block;
       float: left;
-      position: relative;
+      position: absolute;
+      z-index: 1200;
+      left: 0px;
       box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 1);
       cursor: pointer;
       i {
